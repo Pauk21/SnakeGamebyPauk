@@ -11,6 +11,7 @@ SnakeGame::SnakeGame()
 SnakeGame::~SnakeGame()
 {
 	delete[] gameGrid;
+	std::cout << "Thanks for playing! <3";
 }
 
 void SnakeGame::update(sf::RenderWindow& window)

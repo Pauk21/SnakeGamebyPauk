@@ -32,6 +32,8 @@ int main()
 				if (event.key.code == sf::Keyboard::Right)
 					if (snake.moveX == 0)
 						snake.changeDir(1, 0);
+				if (event.key.code == sf::Keyboard::Escape)
+					window.close();
 			}
 		}
 		sf::Time elapsed = frameClock.getElapsedTime();
