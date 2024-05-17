@@ -103,14 +103,14 @@ void SnakeGame::changeDir(int X, int Y)
 
 sf::RectangleShape SnakeGame::getSnakePixel()
 {
-	sf::RectangleShape pixel(sf::Vector2f(pixelSize, pixelSize));
+	sf::RectangleShape pixel(sf::Vector2f(pixelSize - 2, pixelSize - 2));
 	pixel.setFillColor(sf::Color::Green);
 	return pixel;
 }
 
 sf::RectangleShape SnakeGame::getApple()
 {
-	sf::RectangleShape pixel(sf::Vector2f(pixelSize, pixelSize));
+	sf::RectangleShape pixel(sf::Vector2f(pixelSize - 2, pixelSize - 2));
 	pixel.setFillColor(sf::Color::Red);
 	return pixel;
 }
